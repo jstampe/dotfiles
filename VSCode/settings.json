@@ -1,0 +1,10 @@
+{
+    "window.zoomLevel": 0,
+    "editor.fontSize": 13,
+    "editor.fontFamily": "'DejaVu Sans Mono', 'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
+    "files.trimTrailingWhitespace": true,
+    "workbench.colorTheme": "Dracula",
+    "workbench.iconTheme": "vscode-great-icons",
+    "editor.cursorBlinking": "solid",
+    "editor.cursorStyle": "line"
+}
