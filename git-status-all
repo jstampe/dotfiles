@@ -1,0 +1,3 @@
+#!/bin/sh
+
+find -maxdepth 4 -type d -name ".git" | sed 's/\/.git//g' | xargs -i sh -c 'cd {}; [ -z "$(git status --porcelain)" ] || (echo {}; git status -s; echo)'

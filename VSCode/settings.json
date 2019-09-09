@@ -1,10 +1,12 @@
 {
-    "window.zoomLevel": 0,
-    "editor.fontSize": 13,
-    "editor.fontFamily": "'DejaVu Sans Mono', 'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
-    "files.trimTrailingWhitespace": true,
-    "workbench.colorTheme": "Dracula",
+    "telemetry.enableTelemetry": false,
     "workbench.iconTheme": "vscode-great-icons",
-    "editor.cursorBlinking": "solid",
-    "editor.cursorStyle": "line"
+    "workbench.colorTheme": "Dracula",
+    "window.zoomLevel": 1,
+    "keyboard.dispatch": "keyCode",
+    "workbench.activityBar.visible": true,
+    "breadcrumbs.enabled": false,
+    "editor.minimap.enabled": false,
+    "window.menuBarVisibility": "default",
+    "files.trimTrailingWhitespace": true
 }
