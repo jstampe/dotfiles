@@ -101,5 +101,20 @@
         "key": "pageup",
         "command": "-cursorPageUp",
         "when": "textInputFocus"
-    }
+    },
+    {
+        "key": "ctrl+/",
+        "command": "-editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+/",
+        "command": "macros.commentLine",
+        "when": "editorTextFocus && !editorReadonly && !editorHasSelection"
+    },
+    {
+        "key": "ctrl+/",
+        "command": "editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly && editorHasSelection"
+    },
 ]
