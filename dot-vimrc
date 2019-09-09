@@ -1,0 +1,37 @@
+" Load plugins
+call plug#begin()
+Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
+Plug 'sheerun/vim-polyglot'
+Plug '~/.fzf'
+call plug#end()
+
+" Hide dot files in netrw
+let ghregex='\(^\|\s\s\)\zs\.\S\+'
+let g:netrw_list_hide='node_modules,dist,build,' . ghregex
+
+" " ProjctDrawer
+" let g:netrw_hide = 1
+" let g:netrw_banner = 0
+" let g:netrw_liststyle = 3
+" let g:netrw_browse_split = 4
+" let g:netrw_altv = 1
+" let g:netrw_winsize = 25
+" augroup ProjectDrawer
+"   autocmd!
+"   autocmd VimEnter * :Vexplore
+" augroup END
+
+" Color scheme
+colorscheme challenger_deep
+
+" Add line numbers
+set number
+
+filetype plugin indent on
+" show existing tab with 4 spaces width
+set tabstop=4
+" when indenting with '>', use 4 spaces width
+set shiftwidth=4
+" On pressing tab, insert 4 spaces
+set expandtab
+

@@ -4,6 +4,7 @@
 cp ~/.bashrc ./dot-bashrc
 cp ~/.screenrc ./dot-screenrc
 cp ~/.inputrc ./dot-inputrc
+cp ~/.vimrc ./dot-vimrc
 
 # VSCode
 cp -r ~/.config/Code/User/snippets/ ./VSCode/
