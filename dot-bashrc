@@ -30,8 +30,10 @@ alias http-server="python3 -m http.server"
 # Fancy cd
 function cd {
 	builtin cd "${@}"
-	if [ "$( ls -l | wc -l )" -gt 34 ] ; then
-		ls -l -G -r -t --color=always | awk 'NR < 16 { print }; NR == 16 { printf "\033[1;31m                        (... snip ...) \033[0m \n" }; { buffer[NR % 14] = $0 } END { for( i = NR + 1; i <= NR+14; i++ ) print buffer[i % 14] }'
+	file_count=$( ls -l | wc -l )
+	if [ "$file_count" -gt 34 ] ; then
+		let "rest=$file_count - 28"
+		ls -l -G -r -t --color=always | awk 'NR < 16 { print }; NR == 16 { printf "\033[1;31m                        (... %s ...) \033[0m \n", rest }; { buffer[NR % 14] = $0 } END { for( i = NR + 1; i <= NR+14; i++ ) print buffer[i % 14] }' rest=$rest
 	else
 		ll -rt
 	fi
