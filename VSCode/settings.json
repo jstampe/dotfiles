@@ -14,5 +14,13 @@
             "editor.action.commentLine",
             "cursorDown"
         ]
-    }
+    },
+    "typescript.updateImportsOnFileMove.enabled": "never",
+    "[python]": {
+
+    },
+    "python.linting.pylintArgs": [
+        "--load-plugins=pylint_django"
+    ],
+    "todohighlight.isEnable": false,
 }

@@ -5,7 +5,7 @@ startup_message off
 vbell off
 
 # Let C+b be modifier key
-escape ^Ba
+# escape ^Ba
 
 
 

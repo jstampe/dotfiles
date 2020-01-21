@@ -8,7 +8,7 @@ cp ~/.vimrc ./dot-vimrc
 cp ~/.agignore ./dot-agignore
 
 # Apple Trackpad thingy
-cp ~/trackpad-quirks.sh ./
+# cp ~/trackpad-quirks.sh ./
 
 # Git
 cat ~/.gitconfig | grep -v user | grep -v jstampe > ./dot-gitconfig
